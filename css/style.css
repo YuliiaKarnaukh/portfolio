@@ -24,6 +24,8 @@ img{
     font-weight: 200;
 }
 
+
+
 /* Menu */
 .menuNav{
     float: right;
@@ -81,6 +83,12 @@ a, button {
 .mouse-hover{
     transform: scale(2);
     background-color: #5D5E3F;
+}
+
+@media screen and (max-width: 414px){
+    .menu{
+        font-size: 15px;
+    }
 }
 
 /* Header */
@@ -143,6 +151,14 @@ hr{
     }
 }
 
+@media screen and (max-width: 414px){
+    .text-name{
+        font-size: 25px;
+    }
+    hr{
+        width: 300px;
+    }
+}
 
 /* About */
 
@@ -182,12 +198,6 @@ hr{
     margin-bottom: 25px;
 }
 
-/*.img-about{
-    position: relative;
-    z-index: -1;
-}
-*/
-
 .downloadBtn{
     font-family: 'Palatino Linotype';
     font-weight: 200;
@@ -207,7 +217,35 @@ hr{
     color: #F3F5E0;
 }
 
+a .downloadBtn{
+    color: #191919;
+}
 
+
+@media screen and (max-width: 414px){
+    .aboutBox{
+        display: inline;
+    }
+    .imgBox{
+        margin: 40px 0 50px;
+    }
+
+    .img-about{
+        width: 100%;
+    }
+    .text-about {
+    padding-left: 0;
+    }
+
+    .text-about p{
+        font-size: 18px;
+    }
+
+    .aboutme{
+        display: flex;
+        justify-content: center;
+    }
+}
 
 /* Slick, arrow */
 .slick-prev, .slick-next{
@@ -334,6 +372,7 @@ polyline {
 
 
 .text-projects{
+    text-align: justify;
     font-size: 17px;
 }
 
@@ -356,6 +395,23 @@ polyline {
     font-weight: bold;
     padding-bottom: 10px;
     color: #5D5E3F;
+}
+
+@media screen and (max-width: 414px){
+    .heading-projects{
+        font-size: 33px;
+    }
+
+     .imgSize-Tel{
+        width: 50%;
+    }
+    .logo-projects{
+        text-align: center;
+        margin-right: 0!important;
+        width: 105%;
+        padding: 20px 0 50px;
+    }
+
 }
 
 /* Panel */
@@ -397,6 +453,12 @@ polyline {
     margin-bottom: 100px;
 }
 
+@media screen and (max-width: 414px){
+   .panelBody-telefone{
+        display: inline;
+   }
+}
+
 
 /* Footer */
 
@@ -432,8 +494,6 @@ footer{
     text-transform: uppercase;
 }
 
-
-
 .footer-tel{
     color: #fff;
     font-size: 20px;
@@ -459,6 +519,36 @@ i{
     margin: 0 0 10px;
 }
 
+@media screen and (max-width: 414px){
+   .footer-info{
+    display: inline;
+   }
+
+   .email-tel{
+    padding-top: 40px;
+    text-align: center;
+   }
+
+   .footer-links{
+    text-align: unset;
+    margin: 40px 0 40px;
+   }
+}
+
+@media screen and (max-width: 768px){
+   .footer-info{
+    display: inline-block;
+    text-align: center;
+   }
+    .footer-links{
+        text-align: unset;
+        margin: 40px 0 40px;
+    }
+
+    .email-tel{
+        padding-top: 40px;
+    }
+}
 
 
 
