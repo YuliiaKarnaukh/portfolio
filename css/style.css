@@ -89,6 +89,9 @@ a, button {
     .menu{
         font-size: 15px;
     }
+    .cursor{
+        display: none;
+    }
 }
 
 /* Header */
