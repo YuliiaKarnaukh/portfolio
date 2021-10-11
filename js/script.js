@@ -9,6 +9,18 @@ function cursor(e){
   mouseCursor.style.left = e.pageX + 'px';
 }   
 
+//LINKS ANCOR
+
+ $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+
+
 // -> mouse-hover
 // .menu - .footerLinks a - .emailFooter -> hover-content
 
