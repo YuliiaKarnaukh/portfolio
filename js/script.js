@@ -1,50 +1,33 @@
-$('.single-item').slick();
-
-let mouseCursor = document.querySelector('.cursor');
-let menuNav = document.querySelectorAll('.menuNav .menu')
-window.addEventListener('mousemove', cursor);
-
-function cursor(e){
-  mouseCursor.style.top = e.pageY + 'px';
-  mouseCursor.style.left = e.pageX + 'px';
-}   
-
-//LINKS ANCOR
-
- $(document).ready(function(){
-    $("#menu").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
-    });
+// Cursor
+magicMouse({
+  hoverEffect: "circle-move",
+  outerWidth: 20,
+  outerHeight: 20
 });
 
-
-// -> mouse-hover
-// .menu - .footerLinks a - .emailFooter -> hover-content
-
-document.querySelectorAll('.hover-content').forEach(link => {
-  link.addEventListener('mouseleave',() =>{
-    mouseCursor.classList.remove('mouse-hover');
-  });
-    link.addEventListener('mouseover',() =>{
-    mouseCursor.classList.add('mouse-hover');
-  });
+// Carousel
+$(".single-item").slick({
+  slidesToShow: 1,
+  prevArrow: $(".arrowleft"),
+  nextArrow: $(".arrowright"),
+  dots: false,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 4000
+      }
+    }
+  ]
 });
 
-document.querySelector('.colorCursor').addEventListener('mouseleave', () => {
-  mouseCursor.classList.remove('black-mouse');
+document.querySelector(".colorCursor").addEventListener("mouseleave", () => {
+  document.getElementById("magicMouseCursor").classList.remove("black-mouse");
 });
 
-document.querySelector('.colorCursor').addEventListener('mouseover', () => {
-   mouseCursor.classList.add('black-mouse');
-});
-
-document.querySelector('.img-about').addEventListener('mouseleave', () => {
-  mouseCursor.style.zIndex = 0;
-});
-
-document.querySelector('.img-about').addEventListener('mouseover', () => {
-   mouseCursor.style.zIndex = 10;
+document.querySelector(".colorCursor").addEventListener("mouseover", () => {
+  document.getElementById("magicMouseCursor").classList.add("black-mouse");
 });

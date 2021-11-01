@@ -1,225 +1,377 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Yuliia Karnaukh - Junior Web Designer</title>
-    <meta charset="utf-8">
-    <meta charset="keywords" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="" sizes="16x16">
+    <meta charset="utf-8" />
+    <meta charset="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="" sizes="16x16" />
 
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="js/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<div class="cursor"></div>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
 
-	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-sm-12">
-					<div class="menuNav" id="menu">
-						<div class="menu hover-content">
-							<a href="#about">About</a>
-						</div>
-						<div class="menu hover-content">
-							<a href="#works">Works</a>
-						</div>
-						<div class="menu hover-content">
-							<a href="#contacts">Contact</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="magic-mouse.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12">
+            <div class="menuNav" id="menu">
+              <div class="menu magic-hover magic-hover__square">
+                <a href="#about">About</a>
+              </div>
+              <div class="menu magic-hover magic-hover__square">
+                <a href="#works">Works</a>
+              </div>
+              <div class="menu magic-hover magic-hover__square">
+                <a href="#contacts">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
-	<div class="container-fluid heading">
-		<div class="row">
-			<div class="col-lg-12 col-sm-12">
-				<div class=" heading-name">
-					<h1 class="text-name slide-left">Junior Web Designer</h1>
-					<hr class="">
-					<h1 class="text-name slide-right">Yuliia Karnaukh</h1>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="container-fluid heading">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12">
+          <div class=" heading-name">
+            <h1 class="text-name slide-left">Junior Web Designer</h1>
+            <hr class="" />
+            <h1 class="text-name slide-right">Yuliia Karnaukh</h1>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<main class="colorCursor">
-		<div class="container-fluid projectsBg">
-			<div class="container ">
+    <main class="colorCursor">
+      <div class="container-fluid projectsBg">
+        <div class="container">
+          <div id="about" class="row aboutBox">
+            <div class="col-md-6 text-center text-md-left imgBox">
+              <img class="img-about" src="img/img1.jpg" />
+            </div>
+            <div
+              class="col-md-6 text-center text-md-left mt-lg-5 mt-lg-0 text-about"
+            >
+              <h1 class="aboutme">About me</h1>
 
-				<div id="about"></div>
+              <!-- Carousel -->
+              <div class="single-item">
+                <p>
+                  Hi!<br />
+                  I’m <b>Junior Web Designer</b>from Ukraine. I studied at
+                  Lisbon School Design in 2020. Gained knowledge and skills in
+                  programming, web marketing and web design. I eager to work and
+                  improve my skills in this area. I’m an artist by profession.
+                  I’ve got creative thinking which helps me to achieve goals in
+                  website design.
+                </p>
+                <p>
+                  <b>Front-end development, technologies stack:</b><br />
+                  HTML, CSS, basic JavaScript, bootstrap.<br /><br />
+                  <b>Design:</b> <br />
+                  UX, UI, Web, Mobile, Logos.<br /><br />
+                  <b>My tools:</b><br />
+                  Adobe XD, Illustrator, Photoshop.
+                </p>
+              </div>
+              <!--Arrows-->
+              <button
+                class="arrow arrowleft btnArrow left magic-hover magic-hover__square"
+              >
+                <svg
+                  width="60px"
+                  height="80px"
+                  viewBox="0 0 50 80"
+                  xml:space="preserve"
+                >
+                  <polyline
+                    fill="none"
+                    stroke="#5D5E3F"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    points="
+							45.63,75.8 0.375,38.087 45.63,0.375 "
+                  />
+                </svg>
+              </button>
+              <button
+                class="arrow arrowright btnArrow right magic-hover magic-hover__square"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="60px"
+                  height="80px"
+                  viewBox="0 0 50 80"
+                  xml:space="preserve"
+                >
+                  <polyline
+                    fill="none"
+                    stroke="#5D5E3F"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    points="
+							0.375,0.375 45.63,38.087 0.375,75.8 "
+                  />
+                </svg>
+              </button>
+              <!--Arrows-->
 
-				<div class="row aboutBox">
-					<div class="col-lg-6 col-sm-6 col-xs-12 imgBox">
-						<img class="img-about" src="img/img1.jpg">
-					</div>
-					<div class="col-lg-6 col-sm-6 col-xs-12 text-about">
-						<h1 class="aboutme">About me</h1>
+              <a href="Yuliia Karnaukh CV.pdf">
+                <button class="downloadBtn magic-hover magic-hover__square">
+                  Download CV
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-						<!--Arrow-->
-						<button class="arrow arrowleft btnArrow left">
-						  <svg width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
-						    <polyline fill="none" stroke="#5D5E3F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
-							45.63,75.8 0.375,38.087 45.63,0.375 "/>
-						  </svg>  
-						</button>
-						<button class="arrow arrowright btnArrow right">
-						  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
-						    <polyline fill="none" stroke="#5D5E3F" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
-							0.375,0.375 45.63,38.087 0.375,75.8 "/>
-						  </svg>
-						</button>
-
-						<!--Arrow-->
-						<div class="single-item">
-							<p>Hi!<br> I’m <b>Junior Web Designer</b>from Ukraine. I studied at Lisbon School Design in 2020. Gained knowledge and skills in programming, web marketing and web design. I eager to work and improve my skills in this area. I’m an artist by profession. I’ve got creative thinking which helps me to achieve goals in website design.</p>
-							<p><b>Front-end development, technologies stack:</b><br>
-							HTML, CSS, basic JavaScript, bootstrap.<br><br>
-							<b>Design:</b> <br>
-							UX, UI, Web, Mobile, Logos.<br><br>
-							<b>My tools:</b><br> 
-							Adobe XD, Illustrator, Photoshop.</p>
-						</div>
-						
-						<a href="Yuliia Karnaukh CV.pdf">
-							<button class="downloadBtn hover-content">Download CV</button>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="container-fluid projectsBg">
-			<div class="container">
-
-				<div id="works"></div>
-
-				<div class="row">
-					<div class="col-lg-12 col-sm-12 projects-box">
-						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-						  <div class="panel panel-default">
-						    <div class="panel-heading" role="tab" id="headingOne">
-						      <h1 class="heading-projects  panel-title">
-						        <a class="hover-content" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-						         School project
-						        </a>
-						      </h1>
-						    </div>
-						    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-						      <div class="panel-body panel-bodyMargin panelBody-telefone">
-								<div class="col-lg-3 col-sm-12 logo-projects">
-									<a class="hover-content" href="https://www.behance.net/gallery/128098993/ArtDrop-Website" target="_blank">
-										<img  class="img-projectCursor imgSize-Tel" src="img/artdrop.png">
-									</a>
-								</div>
-								<div class="col-lg-9 col-sm-12 text-projects ">
-									<h3 class="name-projects">"ArtDrop"</h3>
-									<p><b>Art Drop</b> portuguese website which provides the information to attract visitors. This site is for acquiring new knowledge, artistic taste and getting inspiration.
-									This is my final school project. Where I put all my and skills for a year at school.</p>
-								</div>
-						      </div>
-						      <div class="panel-body panelBody-telefone">
-								<div class="col-lg-3 col-sm-12 col-xs-12 logo-projects">
-									<a class="hover-content" href="https://www.behance.net/gallery/128482615/Santos-Pires-WebsiteRedesign" target="_blank">
-										<img  class="img-projectCursor imgSize-Tel" src="img/santos.png">
-									</a>
-								</div>
-								<div class="col-lg-9 col-sm-12 col-xs-12 text-projects ">
-									<h3 class="name-projects">"Santos e Pires"</h3>
-									<p><b>Santos & Pires</b> is a portuguesecompany specialized in the sale of all types of sewing threads for the footwear, textile, clothing, leather goods, upholstery, tents, awnings, etc. industries.<br> 
-									The change and redesign of the site was done according to modern canons. </p>
-								</div>
-						      </div>
-						    </div>
-						  </div>
-						  <div class="panel panel-default">
-						    <div class="panel-heading " role="tab" id="headingTwo">
-						      <h1 class="heading-projects panel-title">
-						        <a class="collapsed hover-content" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-						          Personal project
-						        </a>
-						      </h1>
-						    </div>
-						    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-							   <div class="panel-body panel-bodyMargin panelBody-telefone">
-									<div class="col-lg-3 col-sm-12 logo-projects">
-										<a class="hover-content" href="https://www.behance.net/gallery/128374867/Gemios-Art-Redesing" target="_blank">
-											<svg xmlns="http://www.w3.org/2000/svg" width="189" height="146" viewBox="0 0 957.5 243.5">
-											  <g id="Group_51" data-name="Group 51" transform="translate(-424 -166)">
-											    <text id="GEMIOS" transform="translate(424 166)" font-size="170" font-family="Garamond"><tspan x="0" y="147">GEMIOS</tspan></text>
-											    <text id="ART" transform="translate(1047.5 217.5)" font-size="170" font-family="Garamond"><tspan x="0" y="147">ART</tspan></text>
-											  </g>
-											</svg>
-
-										</a>
-									</div>
-									<div class="col-lg-9 col-sm-12 text-projects ">
-										<h3 class="name-projects">"GemiosArt"</h3>
-										<p><b>Gemios Art</b> website is about Moldovan artist. The goal of the project to make design more creative, clean and minimalistic. </p>
-									</div>
-					      		</div>
-					      		<!---
+      <div id="works" class="container-fluid projectsBg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-sm-12 projects-box">
+              <div
+                class="panel-group"
+                id="accordion"
+                role="tablist"
+                aria-multiselectable="true"
+              >
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h1 class="heading-projects  panel-title">
+                      <a
+                        class="magic-hover magic-hover__square"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseOne"
+                        aria-expanded="false"
+                        aria-controls="collapseOne"
+                      >
+                        School project
+                      </a>
+                    </h1>
+                  </div>
+                  <div
+                    id="collapseOne"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingOne"
+                  >
+                    <div class="panel-body panel-bodyMargin panelBody-telefone">
+                      <div class="logo-projects">
+                        <a
+                          class="magic-hover magic-hover__square"
+                          href="https://www.behance.net/gallery/128098993/ArtDrop-Website"
+                          target="_blank"
+                        >
+                          <img
+                            class="img-projectCursor imgSize-Tel"
+                            src="img/artdrop.png"
+                          />
+                        </a>
+                      </div>
+                      <div class="text-projects ">
+                        <h3 class="name-projects">"ArtDrop"</h3>
+                        <p>
+                          <b>Art Drop</b> portuguese website which provides the
+                          information to attract visitors. This site is for
+                          acquiring new knowledge, artistic taste and getting
+                          inspiration. This is my final school project. Where I
+                          put all my and skills for a year at school.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="panel-body panelBody-telefone">
+                      <div class="logo-projects">
+                        <a
+                          class="magic-hover magic-hover__square"
+                          href="https://www.behance.net/gallery/128482615/Santos-Pires-WebsiteRedesign"
+                          target="_blank"
+                        >
+                          <img
+                            class="img-projectCursor imgSize-Tel"
+                            src="img/santos.png"
+                          />
+                        </a>
+                      </div>
+                      <div class="text-projects ">
+                        <h3 class="name-projects">"Santos e Pires"</h3>
+                        <p>
+                          <b>Santos & Pires</b> is a portuguesecompany
+                          specialized in the sale of all types of sewing threads
+                          for the footwear, textile, clothing, leather goods,
+                          upholstery, tents, awnings, etc. industries.<br />
+                          The change and redesign of the site was done according
+                          to modern canons.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading " role="tab" id="headingTwo">
+                    <h1 class="heading-projects panel-title">
+                      <a
+                        class="collapsed magic-hover magic-hover__square"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        Personal project
+                      </a>
+                    </h1>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingTwo"
+                  >
+                    <div class="panel-body panel-bodyMargin panelBody-telefone">
+                      <div class="logo-projects">
+                        <a
+                          class="magic-hover magic-hover__square"
+                          href="https://www.behance.net/gallery/128374867/Gemios-Art-Redesing"
+                          target="_blank"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="189"
+                            height="146"
+                            viewBox="0 0 957.5 243.5"
+                          >
+                            <g
+                              id="Group_51"
+                              data-name="Group 51"
+                              transform="translate(-424 -166)"
+                            >
+                              <text
+                                id="GEMIOS"
+                                transform="translate(424 166)"
+                                font-size="170"
+                                font-family="Garamond"
+                              >
+                                <tspan x="0" y="147">GEMIOS</tspan>
+                              </text>
+                              <text
+                                id="ART"
+                                transform="translate(1047.5 217.5)"
+                                font-size="170"
+                                font-family="Garamond"
+                              >
+                                <tspan x="0" y="147">ART</tspan>
+                              </text>
+                            </g>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="text-projects ">
+                        <h3 class="name-projects">"GemiosArt"</h3>
+                        <p>
+                          <b>Gemios Art</b> website is about Moldovan artist.
+                          The goal of the project to make design more creative,
+                          clean and minimalistic.
+                        </p>
+                      </div>
+                    </div>
+                    <!---
 							      <div class="panel-body panelBody-telefone">
-									<div class="col-lg-3 col-sm-12 logo-projects">
+									<div class="logo-projects">
 										<img  class="img-projectCursor imgSize-Tel" src="img/logo2.png">
 									</div>
-									<div class="col-lg-9 col-sm-12 text-projects ">
+									<div class="text-projects ">
 										<h3 class="name-projects">"ArtDrop"</h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. </p>
 									</div>
 							      </div>
 							      --->
-						    </div>
-						  </div>
-						</div>
-					</div>
-				</div>
-			</div>			
-		</div>
-	</main>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-	<footer>
-		<div class="container info-padding">
-			<div id="contacts"></div>
-			<div class="row footer-info">
-				<div class="col-lg-12 col-sm-12 col-xs-12 email-tel">
-					<a class="hover-content" href="mailto:juliakarnaukh69@gmail.com">juliakarnaukh69@gmail.com</a><br><br>
-					<span class="footer-tel">+351920021820</span>
-				</div>
-				<div class="col-lg-12 col-sm-12 col-xs-12 footer-links footerLinks">
-					<a class="hover-content" href="https://www.facebook.com/profile.php?id=100009500275727" target="_blank">
-						<i class="fa fa-facebook fa-3x"></i>
-					</a>
-					<a class="hover-content" href="https://www.instagram.com/yuliia.karnaukh/" target="_blank">
-						<i class="fa fa-instagram fa-3x"></i>
-					</a>  
-					<a class="hover-content" href="https://www.behance.net/yuliiakarnaukh" target="_blank">
-						<i class="fa fa-behance fa-3x"></i>
-					</a>
-				</div>
-			</div>
+    <footer id="contacts">
+      <div class="container info-padding">
+        <div class="row footer-info">
+          <div class="col-lg-12 col-sm-12 col-xs-12 email-tel">
+            <a
+              class="magic-hover magic-hover__square"
+              href="mailto:juliakarnaukh69@gmail.com"
+              >juliakarnaukh69@gmail.com</a
+            ><br /><br />
+            <span class="footer-tel">+351920021820</span>
+          </div>
+          <div class="col-lg-12 col-sm-12 col-xs-12 footer-links">
+            <a
+              class="magic-hover magic-hover__square"
+              href="https://www.facebook.com/profile.php?id=100009500275727"
+              target="_blank"
+            >
+              <i class="fa fa-facebook fa-3x"></i>
+            </a>
+            <a
+              class="magic-hover magic-hover__square"
+              href="https://www.instagram.com/yuliia.karnaukh/"
+              target="_blank"
+            >
+              <i class="fa fa-instagram fa-3x"></i>
+            </a>
+            <a
+              class="magic-hover magic-hover__square"
+              href="https://www.behance.net/yuliiakarnaukh"
+              target="_blank"
+            >
+              <i class="fa fa-behance fa-3x"></i>
+            </a>
+          </div>
+        </div>
 
-			<div class="row">
-				<div class="col-lg-12 col-sm-12 name-before">
-					<span class="footer-name">Designed by Yuliia Karnaukh</span>
-				</div>
-			</div>
-		</div>
-	</footer>
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 name-before">
+            <span class="footer-name">Designed by Yuliia Karnaukh</span>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-
-
-	<!-- Scripts -->
-	<script src="js/jquery-3.6.0.min.js"></script>
-	<!--SLICK-->
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="magic_mouse.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <!--SLICK-->
     <script src="js/slick/slick.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
