@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -169,7 +170,6 @@ hr {
   position: relative;
   padding: 180px 0;
 }
-
 
 @media screen and (max-width: 768px) {
   .aboutBox {
@@ -388,10 +388,6 @@ polyline {
   color: #5d5e3f;
 }
 
-.text-projects-left{
-  padding-left: 35px;
-}
-
 @media screen and (max-width: 767px) {
   .heading-projects {
     text-align: center;
@@ -428,14 +424,18 @@ polyline {
 }
 
 .logo-projects {
-  width: 220px;
-  margin-right: 70px;
+  flex-shrink: 0;
+  margin-right: 55px;
 }
 
 .logo-projects a {
   display: inline-block;
   padding: 15px;
   margin-right: -15px;
+}
+
+.logo-projects a .img-projectCursor {
+  width: 170px;
 }
 
 @media screen and (max-width: 768px) {
