@@ -170,6 +170,7 @@ hr {
   padding: 180px 0;
 }
 
+
 @media screen and (max-width: 768px) {
   .aboutBox {
     padding: 20px 0;
@@ -385,6 +386,10 @@ polyline {
 
 .heading-projects:hover {
   color: #5d5e3f;
+}
+
+.text-projects-left{
+  padding-left: 35px;
 }
 
 @media screen and (max-width: 767px) {
