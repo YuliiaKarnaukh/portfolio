@@ -388,6 +388,17 @@ polyline {
   color: #5d5e3f;
 }
 
+/*Project Links*/
+.projectLink a{
+  font-family: "Palatino Linotype";
+  font-weight: bold;
+  text-decoration: none;
+  color: #5d5e3f;
+  cursor: none;
+  display: inline-block;
+}
+
+
 @media screen and (max-width: 767px) {
   .heading-projects {
     text-align: center;

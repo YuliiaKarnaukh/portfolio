@@ -27,7 +27,7 @@ $(".single-item").slick({
 document.querySelector(".colorCursor").addEventListener("mouseleave", () => {
   document.getElementById("magicMouseCursor").classList.remove("black-mouse");
 });
-
+   
 document.querySelector(".colorCursor").addEventListener("mouseover", () => {
   document.getElementById("magicMouseCursor").classList.add("black-mouse");
 });
